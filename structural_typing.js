@@ -1,6 +1,7 @@
 // interface Ball  {
 //     diameter:number;
 // }
+export {};
 // interface  Sphere   {
 //     diameter: number;
 // }
@@ -117,16 +118,16 @@
 // myval = undefined; // OK
 // myval = () => { console.log('Hey again!'); }; // OK
 //Unknown
-let value;
-value = true; // OK
-value = 42; // OK
-value = "hey!"; // OK
-value = []; // OK
-value = {}; // OK
-value = Math.random; // OK
-value = null; // OK
-value = undefined; // OK
-value = () => { console.log('Hey again!'); }; // OK
+// let value: unknown;
+// value = true; // OK
+// value = 42; // OK
+// value = "hey!"; // OK
+// value = []; // OK
+// value = {}; // OK
+// value = Math.random; // OK
+// value = null; // OK
+// value = undefined; // OK
+// value = () => { console.log('Hey again!'); }; // OK
 // Assigning a value of type unknown to variables of other types
 // let val: unknown;
 // const val1: unknown = val; // OK
@@ -147,15 +148,13 @@ value = () => { console.log('Hey again!'); }; // OK
 //     console.log(`false`)
 // }
 // enum 
-var teachers;
-(function (teachers) {
-    teachers["Zia_khan"] = "Zia khan";
-    teachers["usman"] = "Usman";
-    teachers["rehan"] = "Rehan";
-})(teachers || (teachers = {}));
-console.log(teachers);
-let $teachers = teachers["Zia_khan"];
-export {};
+// enum teachers {
+//     Zia_khan = "Zia khan",
+//     usman = "Usman",
+//     rehan = "Rehan",
+// }
+// console.log(teachers);
+// let $teachers : teachers = teachers["Zia_khan"]
 // const enum 
 // const enum Color {Red, Green, Blue};//starts with 0
 // let c: Color = Color.Red
